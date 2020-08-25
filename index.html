@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артем Селиванов - официальный сайт</title>
+    <style type="text/css">
+    * {
+        font-family: Arial;
+    }
+    header {
+        background-color: #fbfbfb;
+    }
+
+    .fixed-container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0 100px;
+        background-image: url(img/photo.png);
+        background-position-x: right;
+        background-repeat: no-repeat;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+    }
+    nav a{
+        color: #1f1f24;
+        text-decoration: none;
+        margin-right: 40px;
+    }
+
+    nav a:hover{
+        color: #fc557c;
+        text-decoration: underline;
+    }
+
+    .phone-container{
+        display: flex;
+        justify-items: flex-end;
+        align-items: center;
+    }
+
+    .phone{
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
+    .order-call{
+        border: 1px solid #ff4e2e;
+        padding: 16px 40px;
+        color:#ff4e2e;
+        background-color:white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 650px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 0 0 15px;
+    }
+
+    h3 {
+        color: #8993ad;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .learn-more{
+        border: 1px solid #ff4e2e;
+        padding: 20px 70px;
+        background-color: #ff4e2e;
+        color: white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .WhatCanI{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-items: center;
+    }
+
+    .WhatCanIItem{
+        flex-basis: 25%;
+    }
+
+    .WhatCanIImage {
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .WhatCanIText {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0 0;
+        color: #8993ad;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .what-i-do {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 28px;
+        margin-top: 110px;
+        margin-bottom: 90px;
+    }
+
+    .button-Price{
+        border: 1px solid #ff4e2e;
+        padding: 20px 70px;
+        background-color: #ff4e2e;
+        color: white;
+        cursor: pointer;
+
+        font-size: 13px;
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .third{
+        padding: 100px 100px;
+        background-color: #fbfbfb;
+    }
+
+    .MyWorks{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-items: center;
+    }
+
+    figure{
+        float: left;
+        display: block;
+        height: auto;
+        width: auto;   
+        text-align: center;
+        margin: 0 15px 15px 8px;
+    }
+    figcaption {
+        color: #8993ad;
+        margin-left: 29px;
+        margin-right: 29px;
+    }
+
+    .FigurePic{
+        width: 310px;
+        height: 290px;
+    }
+
+    .TextMyWorks{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 28px;
+        margin-bottom: 100px;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fixed-container first-section">
+            <div class="menu-container">
+                <nav>
+                    <a href="#">Услуги</a>
+                    <a href="#">Портфолио</a>
+                    <a href="#">Стоимость</a>
+                </nav>
+                <div class="phone-container">
+                    <span class="phone">+7(999)555-55-55</span>
+                    <button class="order-call">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="title-container">
+                <h1>Шакиров Артур</h1>
+                <h3>Frontend-разработчик и веб-верстальщик</h3>
+                <button class="learn-more">Узнать больше</button>
+            </div>
+        </div>
+    </header>
+    <section class="second">
+        <div class="fixed-container second-section">
+            
+            <h2 class="what-i-do">Что я делаю</h2>
+            
+            <div class="WhatCanI">
+                <div class="WhatCanIItem"><img src="img/coding.png" alt="coding.png" class="WhatCanIImage">
+                    <p class="WhatCanIText">Верстка лендинг-страниц и сайтов любой сложности</p>
+                </div>
+                <div class="WhatCanIItem"><img src="img/responsive.png" alt="responsive.png" class="WhatCanIImage">
+                    <p class="WhatCanIText">Адаптивная верстка под все браузеры и устройства</p>
+                </div>
+                <div class="WhatCanIItem"><img src="img/programming.png" alt="programming.png" class="WhatCanIImage">
+                    <p class="WhatCanIText">Frontend-разработка и программирование</p>
+                </div>
+                <div class="WhatCanIItem"><img src="img/tools-and-utensils.png" alt="tools-and-utensils.png" class="WhatCanIImage">
+                    <p class="WhatCanIText">Исправление и доработка существующей верстки</p>
+                </div>
+                <button class="button-Price">Узнать стоимость</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
